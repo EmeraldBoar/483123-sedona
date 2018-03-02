@@ -1,12 +1,143 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Sedona</title>
+</head>
+<body>
+  <div class="container">
+      <header class="header">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="#">Информация</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Фото и видео</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Карта штата</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Гостиница</a></li>
+          </ul>
+          <img class="menu__logo" src="http://placehold.it/138x70" alt="Логотип Седона" width="138" height="70">
+        </nav>
+      </header>
+    <div class="promo">
+      <img class="promo__img" src="http://placehold.it/360x355" alt="" width="360" height="355">
+    </div>
+    <main class="main">
+      <section class="advantages">
+        <div class="advantages__header">
+          <h1 class="advantages__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p class="advantages__desc">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
+        <div class="advantages__row">
+          <div class="advantage advantage--blue">
+            <h2 class="advantage__title">Настоящий городок</h2>
+            <span class="advantage__number">№1</span>
+            <p class="advantage__text">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <div class="advantage-img">
+            <img src="http://placehold.it/800x256" alt="Фотография Седоны" width="800" height="256">
+          </div>
+        </div>
+        <div class="advantages__row">
+          <div class="advantage advantage__icon advantage__icon--home">
+            <h2 class="advantage__title">Жилье</h2>
+            <p class="advantage__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </div>
+          <div class="advantage advantage__icon advantage__icon--food">
+            <h2 class="advantage__title">Еда</h2>
+            <p class="advantage__text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+          </div>
+          <div class="advantage advantage__icon advantage__icon--gift">
+            <h2 class="advantage__title">Сувениры</h2>
+            <p class="advantage__text">Не только китайского, но и местного производства!</p>
+          </div>
+        </div>
+        <div class="advantages__row">
+          <div class="advantage-img">
+            <img src="http://placehold.it/800x256" alt="Фотография Седоны" width="800" height="256">
+          </div>
+          <div class="advantage advantage--blue">
+            <h2 class="advantage__title">Там есть мост дьявола</h2>
+            <span class="advantage__number">№2</span>
+            <p class="advantage__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
+        </div>
+        <div class="advantages__row">
+          <div class="advantage advantage--gray">
+            <h2 class="advantage__title">Небольшая площадь</h2>
+            <span class="advantage__number">№3</span>
+            <p class="advantage__text">Все достопримечательности находятся очень близко</p>
+          </div>
+          <div class="advantage advantage--gray">
+            <h2 class="advantage__title">Красивая дорога</h2>
+            <span class="advantage__number">№4</span>
+            <p class="advantage__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+          <div class="advantage advantage--gray">
+            <h2 class="advantage__title">Мало туристов</h2>
+            <span class="advantage__number">№5</span>
+            <p class="advantage__text">Большинство едет в гранд каньон и толпится там</p>
+          </div>
+        </div>
+      </section>
+      <section class="search">
+        <span class="search__title">Заинтересовались?</span>
+        <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="btn search__btn" type="button">Поиск гостиницы в Седоне</button>
+      </section>
+      <form class="search-form" method="get">
+        <div class="search-form__row">
+          <label class="search-form__title" for="date-from">Дата заезда:</label>
+          <input class="search-form__field" name="date-from" type="text" id="date-from">
+          <button class="search-form__calendar" type="button">Календарь</button>
+        </div>
+        <div class="search-form__row">
+          <label class="search-form__title" for="date-to">Дата выезда:</label>
+          <input class="search-form__field" name="date-to" type="text" id="date-to">
+          <button class="search-form__calendar" type="button">Календарь</button>
+        </div>
+        <div class="search-form__row">
+          <div class="search-form__col">
+            <label class="search-from__title" for="age">Возраст:</label>
+            <div class="number">
+              <button class="number__btn number__btn--plus" type="button" name="button">Плюс</button>
+              <input class="number__field" name="age" type="text" id="age">
+              <button class="number__btn number__btn--minus" type="button" name="button">Минус</button>
+            </div>
+          </div>
+          <div class="search-form__col">
+            <label class="search-from__title" for="child">Дети:</label>
+            <div class="number">
+              <button class="number__btn number__btn--plus" type="button" name="button">Плюс</button>
+              <input class="number__field" name="child" type="text" id="child">
+              <button class="number__btn number__btn--minus" type="button" name="button">Минус</button>
+            </div>
+          </div>
+          <button class="btn search-form__btn" type="submit">Найти</button>
+        </div>
+      </form>
+      <section class="map">
+      </section>
+    </main>
+      <footer class="footer">
+        <div class="footer__col">
+          <span class="hashtag">#visitsedona</span>
+        </div>
+        <div class="footer__col">
+            <ul class="social-list">
+              <li class="social-item"><a class="social__btn social__btn--tw" href="#">Twitter</a></li>
+              <li class="social-item"><a class="social__btn social__btn--fb" href="#">Facebook</a></li>
+              <li class="social-item"><a class="social__btn social__btn--yt" href="#">Youtube</a></li>
+            </ul>
+        </div>
+        <div class="footer__col">
+          <div class="copyright">
+            <a class="copyright__link" href="#"><span>Website by</span></a>
+          </div>
+        </div>
+      </footer>
+  </div>
+</body>
 </html>

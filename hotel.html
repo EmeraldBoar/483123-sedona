@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Hotel</title>
+</head>
+<body>
+  <div class="container">
+      <header class="header">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="index.html">Информация</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Фото и видео</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Карта штата</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Гостиница</a></li>
+          </ul>
+          <a href="index.html"><img class="main-menu__logo" src="http://placehold.it/138x70" alt="Логотип Седона" width="138" height="70"></a>
+        </nav>
+      </header>
+    <main class="main">
+      <section class="filters">
+        <form  class="filter-form" action="#" method="get">
+          <fieldset class="filter-form__col">
+            <legend>Инфаструктура:</legend>
+              <input type="checkbox" name="pool" id="pool">
+              <label class="filter-form__label" for="pool">Бассейн</label>
+              <input type="checkbox" name="parking" id="parking">
+              <label class="filter-form__label" for="parking">Парковка</label>
+              <input type="checkbox" name="wifi" id="wifi">
+              <label class="filter-form__label" for="wifi">Бассейн</label>
+          </fieldset>
+          <fieldset class="filter-form__col">
+            <legend>Тип жилья:</legend>
+              <input type="checkbox" name="hotel" id="hotel">
+              <label class="filter-form__label" for="hotel">Гостиница</label>
+              <input type="checkbox" name="motel" id="motel">
+              <label class="filter-form__label" for="motel">Мотель</label>
+              <input type="checkbox" name="apartamenst" id="apartments">
+              <label class="filter-form__label" for="apartments">Аппартаменты</label>
+          </fieldset>
+          <fieldset class="filter-form__col">
+            <legend>Стоимость в сутки (Р):</legend>
+            <div class="range">
+            </div>
+          </fieldset>
+          <button class="filter-form__btn" type="submit" name="button">Показать</button>
+        </form>
+      </section>
+      <section class="sorting">
+        <div class="sorting__col">
+          <span class="sorting__found">Найдено:3</span>
+          <ul class="sorting__list">
+            <li class="sorting__item">Сортировка:</li>
+            <li class="sorting__item"><a class="sorting__link" href="#">По цене</a></li>
+            <li class="sorting__item"><a class="sorting__link" href="#">По типу</a></li>
+            <li class="sorting__item"><a class="sorting__link" href="#">По рейтингу</a></li>
+          </ul>
+        </div>
+        <div class="sorting__col">
+          <span class="sorting__up"></span>
+          <span class="sorting__down"></span>
+        </div>
+      </section>
+      <section class="hotel">
+        <div class="hotel__col">
+          <div class="hotel__img">
+            <img src="http://placehold.it/135x90" alt="" width="135" height="90">
+          </div>
+          <div class="hotel__info">
+            <h2 class="hotel__title">Amara Resort & Spa</h2>
+            <div class="hotel__inner">
+              <span>Гостиница</span>
+              <span>от 4000 р.</span>
+            </div>
+            <div class="hotel__buttons">
+              <a href="#" class="hotel__button">Подробнее</a>
+              <a href="#" class="hotel__button">Забронировать</a>
+            </div>
+          </div>
+        </div>
+        <div class="hotel__col">
+          <span class="hotel__stars"></span>
+          <span class="hotel__raiting">Рейтинг: 8,5</span>
+        </div>
+      </section>
+      <section class="hotel">
+        <div class="hotel__col">
+          <div class="hotel__img">
+            <img src="http://placehold.it/135x90" alt="" width="135" height="90">
+          </div>
+          <div class="hotel__info">
+            <h2 class="hotel__title">Desert Quail Inn</h2>
+            <div class="hotel__inner">
+              <span>Мотель</span>
+              <span>от 3000 р.</span>
+            </div>
+            <div class="hotel__buttons">
+              <a href="#" class="hotel__button">Подробнее</a>
+              <a href="#" class="hotel__button">Забронировать</a>
+            </div>
+          </div>
+        </div>
+        <div class="hotel__col">
+          <span class="hotel__stars"></span>
+          <span class="hotel__raiting">Рейтинг: 8,9</span>
+        </div>
+      </section>
+      <section class="hotel">
+        <div class="hotel__col">
+          <div class="hotel__img">
+            <img src="http://placehold.it/135x90" alt="" width="135" height="90">
+          </div>
+          <div class="hotel__info">
+            <h2 class="hotel__title">Villas at Poco Diablo</h2>
+            <div class="hotel__inner">
+              <span>Аппартаменты</span>
+              <span>от 2000 р.</span>
+            </div>
+            <div class="hotel__buttons">
+              <a href="#" class="hotel__button">Подробнее</a>
+              <a href="#" class="hotel__button">Забронировать</a>
+            </div>
+          </div>
+        </div>
+        <div class="hotel__col">
+          <span class="hotel__stars"></span>
+          <span class="hotel__raiting">Рейтинг: 9,2</span>
+        </div>
+      </section>
+    </main>
+      <footer class="footer">
+        <div class="footer__col">
+          <span class="hashtag">#visitsedona</span>
+        </div>
+        <div class="footer__col">
+            <ul class="social-list">
+              <li class="social-item"><a class="social__btn social__btn--tw" href="#">Twitter</a></li>
+              <li class="social-item"><a class="social__btn social__btn--fb" href="#">Facebook</a></li>
+              <li class="social-item"><a class="social__btn social__btn--yt" href="#">Youtube</a></li>
+            </ul>
+        </div>
+        <div class="footer__col">
+          <div class="copyright">
+            <a class="copyright__link" href="#"><span>Website by</span></a>
+          </div>
+        </div>
+      </footer>
+  </div>
+</body>
+</html>
