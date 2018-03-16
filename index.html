@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <title>Sedona</title>
 </head>
 <body>
@@ -15,21 +16,23 @@
           <ul class="menu__list">
             <li class="menu__item"><a class="menu__link" href="#">Информация</a></li>
             <li class="menu__item"><a class="menu__link" href="#">Фото и видео</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Карта штата</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Гостиница</a></li>
+            <li class="menu__item menu__item--align-right"><a class="menu__link" href="#">Карта штата</a></li>
+            <li class="menu__item menu__item--align-right"><a class="menu__link" href="#">Гостиницы</a></li>
           </ul>
           <img class="menu__logo" src="img/nav-logo.png" alt="Логотип Седона" width="138" height="70">
         </nav>
       </header>
     <div class="promo">
-      <img class="promo__img" src="img/promo-title.png" alt="" width="360" height="355">
+      <img class="promo__img" src="img/promo-title.png" alt="" width="458" height="352">
     </div>
     <main class="main">
       <section class="advantages">
         <h1 class="visually-hidden">Преимущества</h1>
         <div class="advantages__header">
-          <h2 class="advantages__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p class="advantages__desc">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+            <div class="advantages__header-wrap">
+              <h2 class="advantages__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+              <p class="advantages__desc">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+            </div>
         </div>
         <div class="advantages__row">
           <div class="advantage advantage--blue">
@@ -37,7 +40,7 @@
             <span class="advantage__number">№1</span>
             <p class="advantage__text">Седона — не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <div class="advantage-img">
+          <div class="advantage__img">
             <img src="img/advantage-img.jpg" alt="Фотография Седоны" width="800" height="256">
           </div>
         </div>
@@ -56,7 +59,7 @@
           </div>
         </div>
         <div class="advantages__row">
-          <div class="advantage-img">
+          <div class="advantage__img">
             <img src="img/advantage-img2.jpg" alt="Фотография Седоны" width="800" height="256">
           </div>
           <div class="advantage advantage--blue">
@@ -85,41 +88,87 @@
       </section>
       <section class="search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
-        <span class="search__title">Заинтересовались?</span>
-        <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="btn search__btn" type="button">Поиск гостиницы в Седоне</button>
+        <div class="search__wrap">
+          <span class="search__title">Заинтересовались?</span>
+          <p class="search__text">Укажите предполагаемые даты поездки,<br /> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <button class="button search__btn" type="button">Поиск гостиницы в Седоне</button>
+        </div>
       </section>
       <form class="search-form" method="get">
         <h2 class="visually-hidden">Форма поиска гостиницы</h2>
         <div class="search-form__row">
           <label class="search-form__title" for="date-from">Дата заезда:</label>
-          <input class="search-form__field" name="date-from" type="text" id="date-from">
-          <button class="search-form__calendar" type="button">Календарь</button>
+          <input class="search-form__field" name="date-from" type="text" id="date-from" placeholder="24 апреля 2017">
+          <button class="button search-form__calendar" type="button">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
+              <g id="calendar_1_">
+              	<path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
+              		c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
+              		c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501
+              		C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75
+              		c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689
+              		c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938
+              		v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z"/>
+              	<rect x="4.594" y="8.225" width="2.625" height="2.066"/>
+              	<rect x="4.594" y="11.668" width="2.625" height="2.067"/>
+              	<rect x="4.594" y="15.112" width="2.625" height="2.066"/>
+              	<rect x="9.188" y="15.112" width="2.625" height="2.066"/>
+              	<rect x="9.188" y="11.668" width="2.625" height="2.067"/>
+              	<rect x="9.188" y="8.225" width="2.625" height="2.066"/>
+              	<rect x="13.781" y="15.112" width="2.625" height="2.066"/>
+              	<rect x="13.781" y="11.668" width="2.625" height="2.067"/>
+              	<rect x="13.781" y="8.225" width="2.625" height="2.066"/>
+              </g>
+          </svg>
+        </button>
         </div>
         <div class="search-form__row">
           <label class="search-form__title" for="date-to">Дата выезда:</label>
-          <input class="search-form__field" name="date-to" type="text" id="date-to">
-          <button class="search-form__calendar" type="button">Календарь</button>
+          <input class="search-form__field" name="date-to" type="text" id="date-to" placeholder="4 июля 2017">
+          <button class="button search-form__calendar" type="button">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
+              <g id="calendar_1_">
+              	<path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
+              		c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
+              		c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501
+              		C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75
+              		c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689
+              		c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938
+              		v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z"/>
+              	<rect x="4.594" y="8.225" width="2.625" height="2.066"/>
+              	<rect x="4.594" y="11.668" width="2.625" height="2.067"/>
+              	<rect x="4.594" y="15.112" width="2.625" height="2.066"/>
+              	<rect x="9.188" y="15.112" width="2.625" height="2.066"/>
+              	<rect x="9.188" y="11.668" width="2.625" height="2.067"/>
+              	<rect x="9.188" y="8.225" width="2.625" height="2.066"/>
+              	<rect x="13.781" y="15.112" width="2.625" height="2.066"/>
+              	<rect x="13.781" y="11.668" width="2.625" height="2.067"/>
+              	<rect x="13.781" y="8.225" width="2.625" height="2.066"/>
+              </g>
+          </svg>
+        </button>
         </div>
         <div class="search-form__row">
           <div class="search-form__col">
-            <label class="search-from__title" for="age">Возраст:</label>
+            <label class="search-form__title" for="age">Возраст:</label>
             <div class="number">
-              <button class="number__btn number__btn--plus" type="button" name="button">Плюс</button>
+              <button class="button number__btn number__btn--plus" type="button" name="button"></button>
               <input class="number__field" name="age" type="text" id="age">
-              <button class="number__btn number__btn--minus" type="button" name="button">Минус</button>
+              <button class="button number__btn number__btn--minus" type="button" name="button"></button>
             </div>
           </div>
           <div class="search-form__col">
-            <label class="search-from__title" for="child">Дети:</label>
+            <label class="search-form__title" for="child">Дети:</label>
             <div class="number">
-              <button class="number__btn number__btn--plus" type="button" name="button">Плюс</button>
+              <button class="button number__btn number__btn--plus" type="button" name="button"></button>
               <input class="number__field" name="child" type="text" id="child">
-              <button class="number__btn number__btn--minus" type="button" name="button">Минус</button>
+              <button class="button number__btn number__btn--minus" type="button" name="button"></button>
             </div>
           </div>
-          <button class="btn search-form__btn" type="submit">Найти</button>
         </div>
+        <button class="button search-form__btn" type="submit">Найти</button>
       </form>
       <section class="map">
         <h2 class="visually-hidden">Карта местонахождения города Седона</h2>
@@ -130,10 +179,10 @@
           <span class="hashtag">#visitsedona</span>
         </div>
         <div class="footer__col">
-            <ul class="social-list">
-              <li class="social-item"><a class="social__btn social__btn--tw" href="#">Twitter</a></li>
-              <li class="social-item"><a class="social__btn social__btn--fb" href="#">Facebook</a></li>
-              <li class="social-item"><a class="social__btn social__btn--yt" href="#">Youtube</a></li>
+            <ul class="social__list">
+              <li class="social__item"><a class="social__btn social__btn--tw" href="#"></a></li>
+              <li class="social__item"><a class="social__btn social__btn--fb" href="#"></a></li>
+              <li class="social__item"><a class="social__btn social__btn--yt" href="#"></a></li>
             </ul>
         </div>
         <div class="footer__col">
