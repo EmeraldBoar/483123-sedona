@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <title>Hotel</title>
 </head>
 <body>
@@ -28,25 +29,57 @@
         <form  class="filter-form" action="#" method="get">
           <fieldset class="filter-form__col">
             <legend>Инфаструктура:</legend>
-              <input type="checkbox" name="pool" id="pool">
-              <label class="filter-form__label" for="pool">Бассейн</label>
-              <input type="checkbox" name="parking" id="parking">
-              <label class="filter-form__label" for="parking">Парковка</label>
-              <input type="checkbox" name="wifi" id="wifi">
-              <label class="filter-form__label" for="wifi">Wi-Fi</label>
+            <label class="filter-form__label" for="pool">
+              <input class="visually-hidden" type="checkbox" name="pool" id="pool">
+              <span class="checkbox-indicator"></span>
+              Бассейн
+            </label>
+            <label class="filter-form__label" for="parking">
+              <input class="visually-hidden" type="checkbox" name="parking" id="parking">
+              <span class="checkbox-indicator"></span>
+              Парковка
+            </label>
+            <label class="filter-form__label" for="wifi">
+              <input class="visually-hidden" type="checkbox" name="wifi" id="wifi">
+              <span class="checkbox-indicator"></span>
+              Wi-Fi
+            </label>
           </fieldset>
           <fieldset class="filter-form__col">
             <legend>Тип жилья:</legend>
-              <input type="checkbox" name="hotel" id="hotel">
-              <label class="filter-form__label" for="hotel">Гостиница</label>
-              <input type="checkbox" name="motel" id="motel">
-              <label class="filter-form__label" for="motel">Мотель</label>
-              <input type="checkbox" name="apartamenst" id="apartments">
-              <label class="filter-form__label" for="apartments">Аппартаменты</label>
+            <label class="filter-form__label" for="hotel">
+              <input class="visually-hidden" type="checkbox" name="hotel" id="hotel" disabled>
+              <span class="checkbox-indicator"></span>
+              Гостиница
+            </label>
+            <label class="filter-form__label" for="motel">
+              <input class="visually-hidden" type="checkbox" name="motel" id="motel">
+              <span class="checkbox-indicator"></span>
+              Мотель
+            </label>
+            <label class="filter-form__label" for="apartments">
+              <input class="visually-hidden" type="checkbox" name="apartamenst" id="apartments">
+              <span class="checkbox-indicator"></span>
+              Аппартаменты
+            </label>
           </fieldset>
           <fieldset class="filter-form__col">
             <legend>Стоимость в сутки (Р):</legend>
-            <div class="range">
+            <div class="filter-controls">
+              <label  class="min-price" for="min-price">от
+                <input type="text" name="min-price" value="0" id="min-price">
+              </label>
+              <label  class="max-price" for="max-price">до
+                <input type="text" name="max-price" value="3000" id="max-price">
+              </label>
+            </div>
+            <div class="filter-range">
+              <div class="filter-scale">
+                <div class="bar">
+                </div>
+              </div>
+              <div class="filter-range-toggle range-toggle-min"></div>
+              <div class="filter-range-toggle range-toggle-max"></div>
             </div>
             <button class="button filter-form__btn" type="submit" name="button">Показать</button>
           </fieldset>
@@ -81,7 +114,7 @@
             <img src="img/hotel-img.jpg" alt="" width="135" height="90">
           </div>
           <div class="hotel__info">
-            <h2 class="hotel__title">Amara Resort &#38; Spa</h2>
+            <h2 class="hotel__title"><a href="#">Amara Resort &#38; Spa</a></h2>
             <div class="hotel__inner">
               <span class="hotel__accommodation">Гостиница</span>
               <span class="hotel__price">от 4000 р.</span>
@@ -119,7 +152,7 @@
             <img src="img/hotel-img2.jpg" alt="" width="135" height="90">
           </div>
           <div class="hotel__info">
-            <h2 class="hotel__title">Desert Quail Inn</h2>
+            <h2 class="hotel__title"><a href="#">Desert Quail Inn</a></h2>
             <div class="hotel__inner">
               <span class="hotel__accommodation">Мотель</span>
               <span class="hotel__price">от 3000 р.</span>
@@ -153,9 +186,9 @@
             <img src="img/hotel-img3.jpg" alt="" width="135" height="90">
           </div>
           <div class="hotel__info">
-            <h2 class="hotel__title">Villas at Poco Diablo</h2>
+            <h2 class="hotel__title"><a href="#">Villas at Poco Diablo</a></h2>
             <div class="hotel__inner">
-              <span class="hotel__accommodation">Аппартаменты</span>
+              <span class="hotel__accommodation">Апартаменты</span>
               <span class="hotel__price">от 2000 р.</span>
             </div>
             <div class="hotel__buttons">
