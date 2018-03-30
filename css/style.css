@@ -863,6 +863,8 @@ img {
 }
 
 .sorting__btn svg {
+  width: 11px;
+  height: 10px;
   pointer-events: none;
 }
 

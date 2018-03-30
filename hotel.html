@@ -37,6 +37,12 @@
       <polygon fill="#81B3D2" points="9.002,0 11.128,6.494 18.005,6.494 12.441,10.506 14.566,17 9.002,12.987 3.438,17 5.564,10.506
         0,6.494 6.878,6.494 "/>
     </symbol>
+    <symbol id="icon-up" viewBox="0 0 11 10">
+      <polygon points="5.5,0 0,10 11,10 "/>
+    </symbol>
+    <symbol id="icon-down" viewBox="0 0 11 10">
+      <polyline points="5.5,10 0,0 11,0 "/>
+    </symbol>
   </svg>
   <div class="container hotel-page">
     <header class="header">
@@ -124,14 +130,16 @@
           </ul>
         </div>
         <div class="sorting__col">
-          <a class="button sorting__btn sorting__btn--up" href="#"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          	 width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-          <polygon points="5.5,0 0,10 11,10 "/>
-          </svg></a>
-          <a class="button sorting__btn sorting__btn--down" href="#"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          	 width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-          <polyline points="5.5,10 0,0 11,0 "/>
-          </svg></a>
+          <a class="button sorting__btn sorting__btn--up" href="#">
+            <svg>
+              <use xlink:href="#icon-up"></use>
+            </svg>
+         </a>
+          <a class="button sorting__btn sorting__btn--down" href="#">
+            <svg>
+              <use xlink:href="#icon-down"></use>
+           </svg>
+         </a>
         </div>
       </section>
       <section class="hotel">
@@ -240,7 +248,7 @@
             <li class="social__item">
               <a class="social__btn social__btn--tw" href="#">
                 <svg>
-                  <use xlink:href="#icon-twitter">
+                  <use xlink:href="#icon-twitter"></use>
                 </svg>
                 <span class="visually-hidden">Twitter</span>
               </a>
@@ -248,7 +256,7 @@
             <li class="social__item">
               <a class="social__btn social__btn--fb" href="#">
                 <svg>
-                  <use xlink:href="#icon-facebook">
+                  <use xlink:href="#icon-facebook"></use>
                 </svg>
                 <span class="visually-hidden">Facebook</span>
               </a>
@@ -256,7 +264,7 @@
             <li class="social__item">
               <a class="social__btn social__btn--yt" href="#">
                 <svg>
-                  <use xlink:href="#icon-youtube">
+                  <use xlink:href="#icon-youtube"></use>
                 </svg>
                 <span class="visually-hidden">Youtube</span>
               </a>
