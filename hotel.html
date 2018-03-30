@@ -38,19 +38,19 @@
         0,6.494 6.878,6.494 "/>
     </symbol>
   </svg>
-  <div class="container">
+  <div class="container hotel-page">
     <header class="header">
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item"><a class="menu__link" href="#">Информация</a></li>
           <li class="menu__item"><a class="menu__link" href="#">Фото и видео</a></li>
           <li class="menu__item menu__item--align-right"><a class="menu__link" href="#">Карта штата</a></li>
-          <li class="menu__item menu__item--align-right"><a class="menu__link" href="#">Гостиницы</a></li>
+          <li class="menu__item menu__item--align-right"><a class="menu__link menu__link--active-page" href="#">Гостиницы</a></li>
         </ul>
-        <img class="menu__logo" src="img/nav-logo.png" alt="Логотип Седона" width="138" height="70">
+        <a href="index.html"><img class="menu__logo" src="img/nav-logo.png" alt="Логотип Седона" width="138" height="70"></a>
       </nav>
     </header>
-    <main class="main hotel-page">
+    <main class="main">
       <h1 class="visually-hidden">Отели</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр</h2>
@@ -114,7 +114,6 @@
         </form>
       </section>
       <section class="sorting">
-        <!--<h2 class="visually-hidden">Сортировка</h2>-->
         <div class="sorting__col">
           <span class="sorting__found">Найдено: 3</span>
           <ul class="sorting__list">
@@ -136,7 +135,6 @@
         </div>
       </section>
       <section class="hotel">
-        <!--<h2 class="visually-hidden">Список отелей</h2>-->
         <div class="hotel__col hotel__col-left">
           <div class="hotel__img">
             <img src="img/hotel-img.jpg" alt="" width="135" height="90">
@@ -268,7 +266,7 @@
       <div class="footer__col">
         <div class="copyright">
           <span>Website by</span>
-          <a class="copyright__link" href="#">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
             <svg>
               <use xlink:href="#icon-footer-logo"></use>
             </svg>
